@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-neutral-bg text-neutral-text font-sans;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-neutral-bg;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-container px-5 sm:px-8 lg:px-12;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-md font-semibold transition-all duration-200 px-6 py-3 text-base;
+  }
+
+  .btn-accent {
+    @apply btn bg-accent text-primary-dark hover:bg-accent-light hover:-translate-y-0.5 shadow-sm hover:shadow-md;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary text-white hover:bg-primary-light;
+  }
+
+  .btn-ghost {
+    @apply btn border border-white/30 text-white hover:bg-white/10;
+  }
+
+  .btn-outline {
+    @apply btn border border-primary/20 text-primary hover:border-accent hover:text-accent;
+  }
+
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.18em] text-accent;
+  }
+
+  .skip-link {
+    @apply sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:rounded;
+  }
+}
+
+@layer utilities {
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
