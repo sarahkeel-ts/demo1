@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0F2A47"/>
+      <stop offset="1" stop-color="#081A2E"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.85" cy="0.2" r="0.6">
+      <stop offset="0" stop-color="#B8924A" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#B8924A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <g transform="translate(80, 110)">
+    <rect width="120" height="120" rx="22" fill="#0F2A47" stroke="#B8924A" stroke-width="3"/>
+    <text x="60" y="78" text-anchor="middle"
+          font-family="Manrope, Inter, sans-serif" font-weight="800" font-size="50" fill="#B8924A">MH</text>
+  </g>
+
+  <text x="80" y="320" font-family="Manrope, Inter, sans-serif" font-weight="800" font-size="76" fill="#FFFFFF">
+    MH SEPTIC
+  </text>
+  <text x="80" y="370" font-family="Inter, sans-serif" font-weight="600" font-size="26" fill="#D4B273" letter-spacing="4">
+    VETERAN OWNED  ·  CENTRAL VIRGINIA
+  </text>
+
+  <text x="80" y="455" font-family="Manrope, Inter, sans-serif" font-weight="700" font-size="40" fill="#FFFFFF">
+    Septic Inspections You Can Trust.
+  </text>
+  <text x="80" y="505" font-family="Inter, sans-serif" font-weight="500" font-size="26" fill="#FFFFFF" fill-opacity="0.85">
+    VDH-compliant inspections, AOSS maintenance, and repairs.
+  </text>
+
+  <g transform="translate(80, 555)">
+    <rect width="380" height="44" rx="22" fill="#B8924A"/>
+    <text x="190" y="29" text-anchor="middle"
+          font-family="Inter, sans-serif" font-weight="700" font-size="20" fill="#0F2A47">
+      Call (804) 837-8746
+    </text>
+  </g>
+</svg>

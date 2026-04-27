@@ -112,7 +112,7 @@ export default function Services() {
         eyebrow="Troubleshooting & Repair"
         icon={Wrench}
         title="Residential Septic Repair"
-        price="Custom quote based on scope"
+        price="Custom Quote"
         intro={[
           'From minor fixes to full system troubleshooting, we diagnose the actual issue before recommending repairs. No upselling. No pressure.',
           'If your system is showing signs of trouble, we will tell you what we find — and the simplest path forward.',

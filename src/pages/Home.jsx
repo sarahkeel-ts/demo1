@@ -77,6 +77,7 @@ const localBusinessJsonLd = {
   email: 'mhseptic804@gmail.com',
   address: {
     '@type': 'PostalAddress',
+    // TODO: add streetAddress and postalCode once owner confirms the public-facing business address
     addressLocality: 'Cumberland',
     addressRegion: 'VA',
     addressCountry: 'US',
@@ -84,11 +85,6 @@ const localBusinessJsonLd = {
   areaServed: counties.map((c) => ({ '@type': 'AdministrativeArea', name: c })),
   openingHours: 'Mo-Fr 08:00-18:00',
   priceRange: '$$',
-  founder: {
-    '@type': 'Person',
-    name: 'Owner',
-    description: 'U.S. Navy Veteran, Licensed Virginia Onsite Sewage System Operator (AOSS).',
-  },
 };
 
 export default function Home() {
