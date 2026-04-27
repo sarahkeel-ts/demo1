@@ -52,6 +52,11 @@ export default function Footer() {
                 Service Area
               </Link>
             </li>
+            <li>
+              <Link to="/blog" className="text-white/85 hover:text-accent-light">
+                Blog
+              </Link>
+            </li>
           </ul>
         </div>
 
