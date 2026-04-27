@@ -10,7 +10,6 @@ import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 import StickyMobileCTA from './components/StickyMobileCTA.jsx';
 import FloatingInspectionCTA from './components/FloatingInspectionCTA.jsx';
-import PreviewBanner from './components/PreviewBanner.jsx';
 
 function ScrollAndTitleManager() {
   const { pathname, hash } = useLocation();
@@ -66,7 +65,6 @@ export default function App() {
     <>
       <a href="#main" className="skip-link">Skip to content</a>
       <ScrollAndTitleManager />
-      <PreviewBanner />
       <Header />
       <main id="main">
         <Routes>
