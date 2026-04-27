@@ -6,6 +6,7 @@ import NotFound from './pages/NotFound.jsx';
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 import StickyMobileCTA from './components/StickyMobileCTA.jsx';
+import FloatingInspectionCTA from './components/FloatingInspectionCTA.jsx';
 import PreviewBanner from './components/PreviewBanner.jsx';
 
 function ScrollAndTitleManager() {
@@ -57,6 +58,7 @@ export default function App() {
         </Routes>
       </main>
       <Footer />
+      <FloatingInspectionCTA />
       <StickyMobileCTA />
     </>
   );
