@@ -18,6 +18,7 @@ import CTA from '../components/CTA.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
 import Reveal from '../components/Reveal.jsx';
 import Reviews from '../components/Reviews.jsx';
+import VirginiaMap from '../components/VirginiaMap.jsx';
 
 const counties = [
   'Cumberland',
@@ -236,7 +237,6 @@ export default function Home() {
           </Reveal>
 
           <Reveal delay={120} className="flex justify-center">
-            {/* Simple stylized VA map placeholder — swap for licensed Wikimedia SVG later if desired */}
             <VirginiaMap />
           </Reveal>
         </div>
@@ -285,56 +285,3 @@ function Credential({ children }) {
   );
 }
 
-function VirginiaMap() {
-  return (
-    <div className="relative w-full max-w-md">
-      {/* Stylized Virginia silhouette — placeholder. Replace with licensed Wikimedia Commons VA map SVG (CC-BY-SA) if needed. */}
-      <svg
-        viewBox="0 0 600 300"
-        className="w-full h-auto"
-        role="img"
-        aria-label="Map of Virginia with MH Septic service area in Central Virginia"
-      >
-        <defs>
-          <linearGradient id="vaFill" x1="0" x2="1" y1="0" y2="1">
-            <stop offset="0" stopColor="#1E4068" />
-            <stop offset="1" stopColor="#0F2A47" />
-          </linearGradient>
-        </defs>
-        <path
-          d="M40,140 L120,90 L200,80 L260,70 L320,90 L380,80 L440,100 L520,140 L560,180 L500,210 L450,220 L420,240 L380,250 L340,240 L300,250 L260,240 L220,230 L180,220 L140,210 L100,200 L70,180 Z"
-          fill="url(#vaFill)"
-          stroke="#081A2E"
-          strokeWidth="2"
-        />
-        <circle cx="300" cy="170" r="14" fill="#B8924A" />
-        <circle cx="300" cy="170" r="22" fill="#B8924A" fillOpacity="0.25" />
-        <text
-          x="300"
-          y="210"
-          textAnchor="middle"
-          fontFamily="Manrope, Inter, sans-serif"
-          fontWeight="800"
-          fontSize="14"
-          fill="#F8F7F4"
-        >
-          Cumberland County
-        </text>
-        <text
-          x="300"
-          y="230"
-          textAnchor="middle"
-          fontFamily="Inter, sans-serif"
-          fontSize="11"
-          fill="#D4B273"
-        >
-          ~1.5 hr service radius
-        </text>
-      </svg>
-      <p className="mt-3 text-xs text-neutral-muted text-center">
-        Stylized map for design preview. Final site can use a licensed Virginia
-        county map.
-      </p>
-    </div>
-  );
-}
