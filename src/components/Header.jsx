@@ -11,6 +11,7 @@ const navItems = [
   { label: 'Service Area', to: '/#service-area' },
   { label: 'About', to: '/#about' },
   { label: 'Reviews', to: '/#reviews' },
+  { label: 'Blog', to: '/blog' },
   { label: 'Contact', to: '/#contact' },
 ];
 
@@ -63,7 +64,7 @@ export default function Header() {
               end={item.to === '/'}
               className={({ isActive }) =>
                 `text-sm font-medium transition-colors ${
-                  isActive && item.to === '/services'
+                  isActive && (item.to === '/services' || item.to === '/blog')
                     ? 'text-accent'
                     : 'text-primary hover:text-accent'
                 }`
