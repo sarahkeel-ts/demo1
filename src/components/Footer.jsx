@@ -7,9 +7,11 @@ export default function Footer() {
       <div className="container-page py-14 grid gap-10 md:grid-cols-3">
         <div>
           <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-md bg-accent text-primary-dark font-display font-extrabold">
-              MH
-            </div>
+            <img
+              src="/logo.png"
+              alt="MH Septic — AOSS Certified"
+              className="h-14 w-14 object-contain"
+            />
             <div>
               <div className="font-display font-extrabold text-lg tracking-tight">MH SEPTIC</div>
               <div className="text-[10px] font-semibold uppercase tracking-[0.18em] text-accent-light">
