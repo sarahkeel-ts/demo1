@@ -39,9 +39,11 @@ export default function Header() {
     >
       <div className="container-page flex items-center justify-between gap-4 py-3 md:py-4">
         <Link to="/" className="flex items-center gap-3" aria-label="MH Septic — home">
-          <div className="flex h-10 w-10 items-center justify-center rounded-md bg-primary text-white font-display font-extrabold">
-            MH
-          </div>
+          <img
+            src="/logo.png"
+            alt="MH Septic — AOSS Certified"
+            className="h-12 w-12 md:h-14 md:w-14 object-contain"
+          />
           <div className="leading-none">
             <div className="font-display font-extrabold text-primary text-lg tracking-tight">
               MH SEPTIC
