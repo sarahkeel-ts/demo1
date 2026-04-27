@@ -17,6 +17,7 @@ import ServiceCard from '../components/ServiceCard.jsx';
 import CTA from '../components/CTA.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
 import Reveal from '../components/Reveal.jsx';
+import Reviews from '../components/Reviews.jsx';
 
 const counties = [
   'Cumberland',
@@ -267,6 +268,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Reviews />
 
       <CTA />
     </>
