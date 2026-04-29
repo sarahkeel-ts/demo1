@@ -157,11 +157,10 @@ export default function Home() {
       <section id="about" className="section bg-neutral-surface" aria-labelledby="about-heading">
         <div className="container-page grid gap-12 lg:grid-cols-2 lg:items-center">
           <Reveal className="relative">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-neutral-border bg-primary/5">
-              {/* TODO: replace with MH Septic owned photo (owner in uniform / by service truck) */}
+            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-neutral-border bg-primary/5">
               <img
-                src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1000&q=80"
-                alt="MH Septic owner on site, ready for an inspection."
+                src="/van.jpg"
+                alt="The MH Septic service van, branded with logo and contact info."
                 loading="lazy"
                 className="h-full w-full object-cover"
               />

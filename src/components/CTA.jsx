@@ -1,20 +1,37 @@
 import { Phone, Mail } from 'lucide-react';
 
+const QUOTE_FORM_URL =
+  'https://quoteiq-2.web.app/customer_form/DcnWWdXdKRXKBQrHU7PpKJ9Xyk63-oeMJ92py6iMEnSS5FlYV';
+
 export default function CTA() {
   return (
     <section id="contact" className="section bg-neutral-bg" aria-labelledby="cta-heading">
-      <div className="container-page max-w-3xl text-center">
+      <div className="container-page max-w-4xl text-center">
         <span className="eyebrow">Get In Touch</span>
         <h2 id="cta-heading" className="mt-3 text-3xl md:text-5xl font-extrabold text-primary leading-tight">
           Ready to schedule? Let&rsquo;s talk.
         </h2>
         <p className="mt-5 text-lg text-neutral-muted leading-relaxed mx-auto max-w-xl">
-          Call, text, or email us — we&rsquo;ll get back to you within one
-          business day. Real estate transactions on a tight timeline? Let us know
-          and we&rsquo;ll prioritize your scheduling.
+          Send us your details using the form below and we&rsquo;ll get back to
+          you within one business day. Real estate transactions on a tight
+          timeline? Let us know and we&rsquo;ll prioritize your scheduling.
         </p>
 
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 text-left">
+        <div className="mt-10 overflow-hidden rounded-2xl border border-neutral-border bg-neutral-surface shadow-sm">
+          <iframe
+            src={QUOTE_FORM_URL}
+            title="MH Septic contact form"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="block h-[1200px] w-full sm:h-[1100px] md:h-[1000px]"
+          />
+        </div>
+
+        <p className="mt-8 text-sm font-semibold uppercase tracking-wider text-neutral-muted">
+          Prefer to reach out directly?
+        </p>
+
+        <div className="mt-4 grid gap-4 sm:grid-cols-2 text-left">
           <a
             href="tel:+18048378746"
             className="flex items-center gap-4 rounded-xl border border-neutral-border bg-neutral-surface p-5 hover:border-accent transition-colors"
