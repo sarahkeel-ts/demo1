@@ -5,26 +5,26 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#0F2A47',
-          dark: '#081A2E',
-          light: '#1E4068',
+          DEFAULT: '#3A2E26',
+          dark: '#241C17',
+          light: '#5A4A3F',
         },
         accent: {
-          DEFAULT: '#B8924A',
-          light: '#D4B273',
+          DEFAULT: '#C9A27E',
+          light: '#E2C7A8',
         },
         neutral: {
-          bg: '#F8F7F4',
-          surface: '#FFFFFF',
-          text: '#1A1A1A',
-          muted: '#5A5A5A',
-          border: '#E5E2DC',
+          bg: '#F5F1E8',
+          surface: '#EDE5D6',
+          text: '#2B221C',
+          muted: '#6E5F53',
+          border: '#DDD3C0',
         },
-        success: '#2F7D5A',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-        display: ['Manrope', 'Inter', 'system-ui', 'sans-serif'],
+        display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
       },
       maxWidth: {
         container: '1200px',

@@ -1,15 +1,13 @@
-# MH Septic — Website Refresh (Preview)
+# Busy Bee Solutions — Website
 
-A modernized 2-page marketing site built as a pitch concept for **MH Septic**, a
-veteran-owned septic inspection company in Central Virginia.
-
-> 🚧 This is a preview/pitch design — not the live MH Septic site.
+A single-page marketing site for **Busy Bee Solutions**, a virtual administrative
+support and social media management business.
 
 ## Stack
 
 - [Vite](https://vitejs.dev/) + [React 18](https://react.dev/)
 - [Tailwind CSS](https://tailwindcss.com/) for styling
-- [React Router](https://reactrouter.com/) for the two pages
+- [React Router](https://reactrouter.com/)
 - [Lucide React](https://lucide.dev/) icons
 - [Netlify Forms](https://docs.netlify.com/forms/setup/) for the contact form (no backend)
 
@@ -47,16 +45,13 @@ routing working on direct visits and refreshes.
 
 ## Where to swap things
 
-| What                         | Where                                           |
-| ---------------------------- | ----------------------------------------------- |
-| Brand colors                 | `tailwind.config.js` → `theme.extend.colors`    |
-| Fonts                        | `index.html` (Google Fonts link) + `tailwind.config.js` |
-| Photos / imagery             | Search the codebase for `TODO: replace`         |
-| Service prices & copy        | `src/pages/Home.jsx` & `src/pages/Services.jsx` |
-| Contact details (phone/email)| Used in components — search for `(804) 837-8746`|
-| Service area counties        | `src/pages/Home.jsx` → `counties` array         |
-| FAQ                          | `src/pages/Services.jsx` → `faq` array          |
-| LocalBusiness JSON-LD        | `src/pages/Home.jsx` → `localBusinessJsonLd`    |
+| What                | Where                                              |
+| ------------------- | -------------------------------------------------- |
+| Brand colors        | `tailwind.config.js` → `theme.extend.colors`       |
+| Fonts               | `index.html` (Google Fonts) + `tailwind.config.js` |
+| Hero / About / Team | `src/pages/Home.jsx`                               |
+| Services list       | `src/pages/Home.jsx` → `services` array            |
+| Contact email       | Search for `admin@busybeesolutionscorp.com`        |
 
 ## Project structure
 
@@ -66,17 +61,10 @@ src/
     Header.jsx
     Footer.jsx
     Hero.jsx
-    ServiceCard.jsx
-    TrustBar.jsx
-    CTA.jsx
-    ContactForm.jsx
-    StickyMobileCTA.jsx
-    PreviewBanner.jsx
     Reveal.jsx
-    SectionHeading.jsx
   pages/
     Home.jsx
-    Services.jsx
+    NotFound.jsx
   App.jsx
   main.jsx
   index.css
@@ -87,20 +75,3 @@ public/
   __forms.html
 netlify.toml
 ```
-
-## Accessibility & SEO
-
-- Semantic HTML (`<header>`, `<main>`, `<section>`, `<footer>`) with proper heading hierarchy
-- All decorative images use empty `alt`; content images have descriptive alt text
-- Skip-to-content link for keyboard users
-- Visible focus rings (accent color)
-- Color contrast targets WCAG AA on the navy/white and accent combinations
-- Per-page `<title>` and `<meta description>` updates via `App.jsx`
-- Open Graph / Twitter Card tags for social sharing
-- `LocalBusiness` JSON-LD on the home page
-
-## Photography
-
-All photos are placeholder Unsplash URLs marked with
-`{/* TODO: replace with MH Septic owned photo */}`. Run a search for
-`TODO: replace` to find every spot to swap before a production launch.
